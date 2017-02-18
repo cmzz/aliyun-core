@@ -18,7 +18,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-class DefaultAcsClient implements IAcsClient 
+use Cmzz\AliyunCore\Exception\ClientException;
+use Cmzz\AliyunCore\Exception\ServerException;
+use Cmzz\AliyunCore\Http\HttpHelper;
+use Cmzz\AliyunCore\Regions\EndpointProvider;
+
+class DefaultAcsClient implements IAcsClient
 {	
 	public $iClientProfile;
 	

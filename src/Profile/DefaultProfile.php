@@ -1,5 +1,10 @@
 <?php namespace Cmzz\AliyunCore\Profile;
 
+use Cmzz\AliyunCore\Auth\Credential;
+use Cmzz\AliyunCore\Auth\ShaHmac1Signer;
+use Cmzz\AliyunCore\Regions\Endpoint;
+use Cmzz\AliyunCore\Regions\ProductDomain;
+
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -18,6 +23,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+
 class DefaultProfile implements IClientProfile
 {
 	private static $profile;
